@@ -1,0 +1,19 @@
+Cross site Scripting
+	SQL injections
+	XML injections
+	SSL configuration (heartbleed, etc)
+	Authentication problems
+	Distributed Denial-of-Service (DDoS) attack
+	Path Disclosure (insecure direct objects)
+	Cross site request forgery (CSRF)
+	JavaScript source code analyze (idk about automating this)
+
+	generated report
+		problem
+		solution
+		risk
+
+nmap -installed
+w3af
+nessus
+zed attack proxy
