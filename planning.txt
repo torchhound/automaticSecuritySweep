@@ -15,5 +15,5 @@ Cross site Scripting
 
 nmap -installed
 w3af
-nessus
+arachni
 zed attack proxy
