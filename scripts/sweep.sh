@@ -8,7 +8,7 @@ read input2
 
 nmap -A -oG "/reports/nmap"$input input 
 
-arachni input --report-save-path=/reports/arachni$input --checks=active/*
+arachni input --report-save-path=/reports/arachni$input 
 
 ./w3af_console -s autosec.w3af
 

@@ -1,8 +1,43 @@
+http-settings
+set timeout 30
+back
 
-output console, html_file
-output config html_file
+misc-settings
+set max_discovery_time 20
+set fuzz_cookies True
+set fuzz_form_files True
+set fuzz_url_parts True
+set fuzz_url_filenames True
+back
+
+crawl all, !bing_spider, !google_spider, !spider_man
+crawl
+
+discovery all
+discovery
+
+audit all
+audit
+
+infrastructure server_header, server_status, domain_dot, dot_net_errors
+
+grep all
+grep
+
+bruteforce all
+bruteforce
+
+mangle all
+mangle
+
+evasion all
+evasion
+
+output console, text_file
+output
+output config text_file
 set output_file /reports/"w3af"$input".html"
-set verbose False
+set verbose True
 back
 output config console
 set verbose False
@@ -14,3 +49,10 @@ set target $input
 back
 cleanup
 start 
+
+
+
+
+
+
+
