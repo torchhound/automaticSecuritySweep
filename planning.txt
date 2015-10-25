@@ -1,4 +1,4 @@
-Cross site Scripting
+	Cross site Scripting
 	SQL injections
 	XML injections
 	SSL configuration (heartbleed, etc)
@@ -14,6 +14,5 @@ Cross site Scripting
 		risk
 
 nmap -installed
-w3af
-arachni
-zed attack proxy
+w3af -installed
+arachni -installed
