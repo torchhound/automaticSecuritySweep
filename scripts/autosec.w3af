@@ -1,0 +1,16 @@
+
+output console, html_file
+output config html_file
+set output_file /reports/"w3af"$input".html"
+set verbose False
+back
+output config console
+set verbose False
+back
+back
+
+target
+set target $input
+back
+cleanup
+start 
